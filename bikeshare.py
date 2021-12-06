@@ -1,6 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 
@@ -96,11 +97,15 @@ def time_stats(df):
 
     # display the most common day of week
     common_day = most_common_value(df['day_of_week'])
-
+    
+    
 
     # display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
     common_hour = most_common_value(df['hour'])
+    
+    #visualize
+    visualize_station(df['hour'])
     
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -115,9 +120,11 @@ def station_stats(df):
 
     # display most commonly used start station
     most_common_start = most_common_value(df['Start Station'])
+    
 
     # display most commonly used end station
     most_common_end = most_common_value(df['End Station'])
+   
 
     # display most frequent combination of start station and end station trip
     merge_cols = df['Start Station'] + "," + df['End Station']
@@ -373,16 +380,20 @@ def change_to_month(month_num):
 
 
 def drop_miss(df):
-    """For dropping missing rows in series
-    :param df: takes a pandas Series as argument
-    :return: returns a pandas Series 	
-    """
+    """For dropping missing rows in series"""
     df = df.dropna()
     df = df.reset_index(drop=True)
     return df
 
 
-
+def visualize_station(data):
+    plt.hist(data)
+    plt.title("Histogram of Frequency Hours Of Bike Use in a Day")
+    plt.xlabel("Hours")
+    plt.ylabel("Frequency")
+    plt.show()
+    
+    
 def main():
     while True:
         city, month, day = get_filters()
@@ -402,4 +413,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
