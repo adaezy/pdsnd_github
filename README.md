@@ -18,3 +18,8 @@ https://docs.python.org/3/
 numpy
 pandas
 time
+
+Usage:
+python bikeshare.py
+
+
