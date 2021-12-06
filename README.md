@@ -13,3 +13,8 @@ Python script -- bikeshare.py
 ### Credits
 Project Data: Udacity
 https://docs.python.org/3/
+
+###Python Modules
+numpy
+pandas
+time
