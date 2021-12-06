@@ -373,7 +373,10 @@ def change_to_month(month_num):
 
 
 def drop_miss(df):
-    """For dropping missing rows in series"""
+    """For dropping missing rows in series
+    :param df: takes a pandas Series as argument
+    :return: returns a pandas Series 	
+    """
     df = df.dropna()
     df = df.reset_index(drop=True)
     return df
