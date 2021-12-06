@@ -14,7 +14,7 @@ Python script -- bikeshare.py
 Project Data: Udacity
 https://docs.python.org/3/
 
-###Python Modules
+### Python Modules
 numpy
 pandas
 time
@@ -22,7 +22,7 @@ time
 Usage:
 python bikeshare.py
 
-Statistics:
+### Statistics:
 
 1. Popular times of travel
 
