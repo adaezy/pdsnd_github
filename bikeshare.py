@@ -105,6 +105,7 @@ def time_stats(df):
     common_hour = most_common_value(df['hour'])
     
     #visualize
+    print("View histogram for frequency of hours")
     visualize_station(df['hour'])
     
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -400,6 +401,8 @@ def main():
         df = load_data(city, month, day)
         #Add columns available
         import pprint
+        
+        print("These are the columns in dataset:")
         for i in df.columns[1:]:
             pprint.pprint(i)
         
