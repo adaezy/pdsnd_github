@@ -1,5 +1,3 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
 ### Date created
 December 6,2021.
 
@@ -13,4 +11,5 @@ This project is to analyze bikeshare data of three cites in the US: Chicago, New
 Python script -- bikeshare.py
 
 ### Credits
+Project Data: Udacity
 https://docs.python.org/3/
