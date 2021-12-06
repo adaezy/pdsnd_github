@@ -398,6 +398,11 @@ def main():
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
+        #Add columns available
+        import pprint
+        for i in df.columns[1:]:
+            pprint.pprint(i)
+        
         show_raw_data(df)
         display_time_statistics(time_stats(df))
         display_station_statistics(station_stats(df))
