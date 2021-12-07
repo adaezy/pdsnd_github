@@ -9,6 +9,9 @@ This project is to analyze bikeshare data of three cites in the US: Chicago, New
 
 ### Files used
 Python script -- bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
 Project Data: Udacity
