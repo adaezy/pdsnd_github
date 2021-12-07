@@ -388,6 +388,10 @@ def drop_miss(df):
 
 
 def visualize_station(data):
+    """ For creating a histogram of time of the day 
+    :param Series: Series
+    :return: histogram
+    """
     plt.hist(data)
     plt.title("Histogram of Frequency Hours Of Bike Use in a Day")
     plt.xlabel("Hours")
