@@ -16,8 +16,12 @@ https://docs.python.org/3/
 
 ### Python Modules
 numpy
+
 pandas
+
 time
+
+matplotlib
 
 Usage:
 python bikeshare.py
